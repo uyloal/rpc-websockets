@@ -2,7 +2,11 @@
 
 import WebSocket from "./lib/client/websocket"
 import CommonClient from "./lib/client"
-import { NodeWebSocketTypeOptions, IWSClientAdditionalOptions } from "./lib/client/client.types"
+import {
+    NodeWebSocketTypeOptions,
+    IWSClientAdditionalOptions,
+    ICommonWebSocketFactory
+} from "./lib/client/client.types"
 
 export class Client extends CommonClient
 {
@@ -19,7 +23,7 @@ export class Client extends CommonClient
     )
     {
         super(
-            WebSocket,
+            WebSocket as ICommonWebSocketFactory,
             address,
             {
                 autoconnect,
