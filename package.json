@@ -45,7 +45,7 @@
     "@types/uuid": "^8.3.4",
     "@types/ws": "^8.2.2",
     "buffer": "^6.0.3",
-    "eventemitter3": "^4.0.7",
+    "eventemitter3": "^5.0.1",
     "uuid": "^8.3.2",
     "ws": "^8.5.0"
   },
